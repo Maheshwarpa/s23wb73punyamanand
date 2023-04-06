@@ -3,7 +3,7 @@ extends layout
 block content
     h1= title
     - let results=[{Cust_Name: "Naresh",Cust_Age:25,Mail_Id:"Naresh@gmail.com"},{Cust_Name: "suresh",Cust_Age:25,Mail_Id:"suresh@gmail.com"},{Cust_Name: "rakesh",Cust_Age:25,Mail_Id:"rakesh@gmail.com"}]
-    div.container-fliud
+    div.container-fluid
         div.row
             each item,ind in results 
                 div(class='col-sm-2' onclick=`buy(${ind})`) 
